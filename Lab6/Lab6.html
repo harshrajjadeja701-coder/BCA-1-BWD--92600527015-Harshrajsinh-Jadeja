@@ -1,0 +1,98 @@
+<!-- Find out Blood donation form image and create one HTML form with same filed. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab6</title>
+</head>
+<body style="background-color: #f8f9fa; color: #212529;">
+
+  <h2 style="color: #a71d2a;">Blood Donation Registration Form</h2>
+  <p>Please fill in the required details to register as a blood donor.</p>
+
+  <form>
+    <!-- 1. Personal Details -->
+    <h3 style="color: #333333;">1. Personal Details</h3>
+    
+    <table>
+      <tr>
+        <td><label for="fullname">Full Name <span style="color: red;">*</span></label></td>
+        <td><input type="text" id="fullname" required style="background-color: #ffffff;"></td>
+      </tr>
+      <tr>
+        <td><label for="dob">Date of Birth <span style="color: red;">*</span></label></td>
+        <td><input type="date" id="dob" required style="background-color: #ffffff;"></td>
+      </tr>
+      <tr>
+        <td><label for="gender">Gender <span style="color: red;">*</span></label></td>
+        <td>
+          <select id="gender" required style="background-color: #ffffff;">
+            <option value="">-- Select --</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="bg">Blood Group <span style="color: red;">*</span></label></td>
+        <td>
+          <select id="bg" required style="background-color: #ffffff;">
+            <option value="">-- Select --</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="weight">Weight (in kg)</label></td>
+        <td><input type="number" id="weight" min="1" style="background-color: #ffffff;"></td>
+      </tr>
+    </table>
+
+    <hr>
+
+    <!-- 2. Contact Details -->
+    <h3 style="color: #333333;">2. Contact Details</h3>
+    
+    <table>
+      <tr>
+        <td><label for="phone">Phone Number <span style="color: red;">*</span></label></td>
+        <td><input type="tel" id="phone" required style="background-color: #ffffff;"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email Address <span style="color: red;">*</span></label></td>
+        <td><input type="email" id="email" required style="background-color: #ffffff;"></td>
+      </tr>
+      <tr>
+        <td><label for="address">Address</label></td>
+        <td><textarea id="address" rows="3" style="background-color: #ffffff;"></textarea></td>
+      </tr>
+    </table>
+
+    <hr>
+
+    <!-- Declaration -->
+    <p>
+      <label>
+        <input type="checkbox" required> I declare that I want to donate blood. <span style="color: red;">*</span>
+      </label>
+    </p>
+
+    <!-- Buttons -->
+    <p>
+      <button type="submit" style="background-color: #a71d2a; color: #ffffff;">Submit Registration</button>
+      <button type="reset" style="background-color: #e0e0e0; color: #000000;">Clear Form</button>
+    </p>
+
+  </form>
+
+</body>
+</html>
